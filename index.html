@@ -1,1 +1,35 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Chess Game by Abdul</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <hidden id='templates'>
+    <div id='game_row_template' class='gamerow'></div>
+    <div id='game_cell_template' class='gamecell'></div>
+    <img id='game_piece_template' src='' class='gamepiece' />
+  </hidden>
+  <!-- partial:index.partial.html -->
+  <div id="vikinggame"></div>
+  <hidden id="game_original">
+    <div id='turn'>It's Whites Turn!</div>
+  </hidden>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="./settings.js"></script>
+  <script src="./GameState.js"></script>
+  <script src="./GameUnit.js"></script>
+  <script src="./EscapeZone.js"></script>
+  <script src="./constants.js"></script>
+  <script src="./helpers.js"></script>
+
+  <script src="./html_setup.js"></script>
+  <!-- 
+    <script src="./game_logic.js"></script>
+  -->
+
+</body>
+</html>
